@@ -1,6 +1,11 @@
+:root {
+    --heading-background-color: #00008b;
+
+}
+
 
 nav {
-    background-color: darkblue;
+    background-color: var(--heading-background-color);
     padding: 10px;
 }
 
