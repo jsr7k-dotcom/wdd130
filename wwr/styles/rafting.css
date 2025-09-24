@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Montserrat:wght@400;700;900&display=swap');
+
+:root {
+/* Color palette */
+    --clr-primary: #0B3954; /* Deep Blue: Background and main elements */
+    --clr-accent: #FF8C42; /* Orange: Buttons and CTA's*/
+    --clr-secondary: #00A6A6; /* Turquoise: Secondary accents & subtitles */
+    --clr-light: #F8F9FA; /* Beige: Text backgrounds */
+    --clr-dark: #343A40; /* Dark Gray: Main text (paragraphs)*/
+/* Typography */
+--font-primary: 'Montserrat', sans-serif; /* Titles and Headings */
+--font-secondary: 'Lato', sans-serif; /* Paragraphs */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-secondary);
+    color: var(--clr-dark);
+}
+
+header, main, footer {
+    width: 840px;
+    margin: 0 auto;
+}
+
+h1, h2 {
+    font-family: var(--font-primary);
+    color: var(--clr-secondary);
+}
+
+nav, p, section, article {
+    margin: 16px;
+    padding: 8px;
+}
+
+.socialmedia a {
+    text-decoration: none;
+}
+
+.hero {
+    position: relative;
+}
+
+.hero img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+h1 {
+    position: absolute;
+    width: 100%;
+    top: 390px;
+    padding: 16px;
+    text-align: center;
+    background-color: var(--clr-light);
+    opacity: 0.7;
+}
+
+.hero article {
+    position: absolute;
+}
+
+.hero article img {
+    float: right;
+    width: 125px;
+    height: auto;
+}
+
