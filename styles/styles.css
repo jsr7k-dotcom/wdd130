@@ -45,20 +45,21 @@ main {
 
 h1 {
     color: #4a4ae0;
-    text-decoration: underline;
+    border-bottom: #4a4ae0 solid 1px;
+    padding-bottom: 10px;
 }
 
 main img {
-    width: 150px;
-    height: auto;
     border: 1px solid black;
-    padding: 2px;
     box-shadow: 0 0 30px gray;
     float: right;
+    height: auto;
+    padding: 2px;
+    width: 150px;
 }
 
 main p {
-    padding: 0;
+    padding-top: 15px;
 }
 
 aside {
@@ -90,9 +91,12 @@ footer {
 /* Class Selectors */
 
 .box {
-    margin: 1rem;
+    margin-top: 1rem;
     border: 1px solid rgb(0 0 0 / 10%);
     padding: 1rem;
     background-color: #dddddd;
     color: #000;
 }
+
+
+
