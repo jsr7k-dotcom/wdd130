@@ -5,26 +5,47 @@ box-sizing: border-box;
 }
 
 :root {
-    --heading-background-color: #00008b;
+    --heading-background-color: #4a4ae0;
 
+}
+
+header, .grid, footer {
+    max-width: 840px;
+    margin: 0 auto;
 }
 
 nav {
     background-color: var(--heading-background-color);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
     padding: 10px;
+
 }
 
 nav a {
     color: white;
     display: block;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 700;
     padding: 20px;
+    text-decoration: none;
+}
+
+.grid {
+    display: grid;
+    align-items: center;
 }
 
 main {
-    max-width: 840px;
+    grid-column: 2/3;
+    margin: 1rem;
 }
+
 h1 {
-    color: darkblue;
+    color: #4a4ae0;
+    text-decoration: underline;
 }
 
 main img {
@@ -41,6 +62,8 @@ main p {
 }
 
 aside {
+    grid-column: 1/2;
+    grid-row: 1/2;
     width: 20rem;
     text-align: center;
     position: relative;
