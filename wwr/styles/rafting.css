@@ -7,8 +7,8 @@
     --clr-light: #F8F9FA; /* Beige: Text backgrounds */
     --clr-dark: #343A40; /* Dark Gray: Main text (paragraphs)*/
 /* Typography */
---font-primary: 'Montserrat', sans-serif; /* Titles and Headings */
---font-secondary: 'Lato', sans-serif; /* Paragraphs */
+    --font-primary: 'Montserrat', sans-serif; /* Titles and Headings */
+    --font-secondary: 'Lato', sans-serif; /* Paragraphs */
 }
 
 * {
@@ -20,11 +20,49 @@
 body {
     font-family: var(--font-secondary);
     color: var(--clr-dark);
+    
 }
 
 header, main, footer {
     width: 840px;
     margin: 0 auto;
+}
+
+header {
+    display: grid;
+    grid-template-columns: 180px 1fr 1fr 1fr;
+    align-items: center;
+}
+
+.logo {
+    display: block;
+    margin: 15px;
+    width: 150px;
+    height: auto;
+}
+
+nav {
+    grid-column: 3 / 5;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    width: 100%;
+}
+
+nav li {
+    flex: 1 1 auto;
+    text-align: center;
+}
+
+li a {
+    text-decoration: none;
+    color: var(--clr-primary);
+    font-size: 1.2rem;
+    padding: 8px;
+    display: block;
 }
 
 h1, h2 {
