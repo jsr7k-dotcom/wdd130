@@ -136,7 +136,6 @@ h1 {
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: space-between;
-    align-items: space-between;
     text-align: justify;
     margin: 8px;
     padding: 8px;
