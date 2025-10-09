@@ -109,8 +109,9 @@ h1 {
     position: absolute;
     top: 300px;
     background-color: var(--clr-secondary);
-    opacity: 0.75;
+    opacity: 0.9;
     color: var(--clr-light);
+	text-shadow: 1px 1px 2px var(--clr-dark);
 }
 
 .hero article img {
