@@ -122,7 +122,7 @@ h1 {
 .history {
     display: grid;
     grid-template-rows: auto auto;
-    margin: 0;
+    margin:16px 0 0 0;
     padding: 0;
 }
 .history h2 {
