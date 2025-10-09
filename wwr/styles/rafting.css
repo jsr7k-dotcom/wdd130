@@ -1,92 +1,92 @@
 /* V A R I A B L E S */
 :root {
-/* Color palette */
+    /* Color palette */
     --clr-primary: #0B3954; /* Deep Blue: Background and main elements */
     --clr-accent: #FF8C42; /* Orange: Buttons and CTA's*/
     --clr-secondary: #00A6A6; /* Turquoise: Secondary accents & subtitles */
     --clr-light: #F8F9FA; /* Beige: Text backgrounds */
     --clr-dark: #343A40; /* Dark Gray: Main text (paragraphs)*/
-/* Typography */
+
+    /* Typography */
     --font-primary: 'Montserrat', sans-serif; /* Titles and Headings */
     --font-secondary: 'Lato', sans-serif; /* Paragraphs */
 }
+
 /* UNIVERSAL STYLES */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
+body {
+    font-family: var(--font-secondary);
+    color: var(--clr-dark);
+}
+
 header, main, footer {
     width: 840px;
     margin: 0 auto;
 }
 
-body {
-    font-family: var(--font-secondary);
-    color: var(--clr-dark);
-    }
+h1, h2 {
+    font-family: var(--font-primary);
+    color: var(--clr-secondary);
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
 
 /* HEADER STYLES */
-
 header {
     display: grid;
-    grid-template-columns: 180px 1fr 1fr 1fr;
+    grid-template-columns: 180px 1fr;
     align-items: center;
+    padding: 16px;
 }
 
 .logo {
-    display: block;
-    margin: 15px;
     width: 180px;
     height: auto;
 }
 
 nav {
-    grid-column: 3 / 5;
+    display: flex;
+    justify-content: flex-end;
 }
 
 nav ul {
     display: flex;
     list-style: none;
-    justify-content: space-around;
-    width: 100%;
+    gap: 16px;
 }
 
-nav li {
-    flex: 1 1 auto;
-    text-align: center;
-}
-
-li a {
+nav a {
     text-decoration: none;
     color: var(--clr-primary);
     font-size: 1.2rem;
     font-weight: 700;
     padding: 8px;
     display: block;
-}
-
-li a:hover {
-    background-color: var(--clr-accent);
-    color: var(--clr-primary);
     border-radius: 8px;
     transition: background-color 0.3s ease;
 }
 
+nav a:hover {
+    background-color: var(--clr-accent);
+    color: var(--clr-primary);
+}
+
 /* MAIN STYLES */
-
-h1, h2 {
-    font-family: var(--font-primary);
-    color: var(--clr-secondary);
-}
-
-nav, p, section, article {
-    margin: 16px;
-    padding: 8px;
-}
-
 .hero {
     position: relative;
+    margin-bottom: 16px;
 }
 
 .hero img {
@@ -95,118 +95,105 @@ nav, p, section, article {
     height: auto;
 }
 
-h1 {
+.hero h1 {
     position: absolute;
-    width: 100%;
     top: 90px;
-    padding: 16px;
-    text-align: center;
-    font-size: 2.5rem;
-    font-weight: 700;
+    width: 100%;
 }
 
 .hero article {
     position: absolute;
     top: 300px;
-    background-color: var(--clr-secondary);
-    opacity: 0.9;
+    background-color: rgba(0, 166, 166, 0.9);
     color: var(--clr-light);
-	text-shadow: 1px 1px 2px var(--clr-dark);
+    text-shadow: 1px 1px 2px var(--clr-dark);
+    padding: 16px;
 }
 
 .hero article img {
     float: right;
     width: 125px;
     height: auto;
+    margin-left: 16px;
 }
+
 .history {
-    display: grid;
-    grid-template-rows: auto auto;
-    margin:16px 0 0 0;
-    padding: 0;
+    margin: 16px 0;
 }
-.history h2 {
-    grid-row: 1 / 2;
-    text-align: center;
-    font-size: 2rem;
-    font-weight: 700;
-    /* margin-bottom: 16px; */
-}
+
 .history_text {
     display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: space-between;
-    text-align: justify;
-    margin: 8px;
-    padding: 8px;
-    /* gap: 16px; */
+    align-items: center;
+    gap: 16px;
+    padding: 16px;
 }
-.history_text p {
-    margin: 0;
-    padding: 0;
 
+.history_text p {
+    text-align: justify;
 }
+
 .history_text img {
-    width: auto;
-    height: 150px;
+    width: 150px;
+    height: auto;
     border-radius: 8px;
-    margin: 16px;
 }
+
 .adventure {
     background-color: var(--clr-primary);
     color: var(--clr-light);
-    text-align: center;
     padding: 32px;
     margin: 16px 0;
 }
+
 .adventure h2 {
-    font-size: 2rem;
-    font-weight: 700;
-    margin-bottom: 16px;
+    color: var(--clr-light);
 }
+
 .adventure-row {
     display: flex;
     gap: 1rem;
     justify-content: center;
     align-items: flex-start;
+    margin-top: 16px;
 }
+
 .adventure-row figure {
-    margin: 0;
     text-align: center;
 }
+
 .adventure-row img {
     width: 150px;
     height: auto;
     border-radius: 8px;
 }
+
 .adventure-row figcaption {
     margin-top: 8px;
     font-size: 1rem;
     font-weight: 600;
 }
+
 /* FOOTER STYLES */
 footer {
     background-color: var(--clr-dark);
     color: var(--clr-light);
-    text-align: center;
     padding: 16px;
     margin-top: 32px;
-    display: grid;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
+
 footer p {
-    margin: 8px 0;
     font-size: 0.9rem;
 }
+
 .socialmedia {
-    margin: 8px 0;
-    grid-column: 3 / 5;
+    display: flex;
+    gap: 16px;
 }
-.socialmedia a {
-    text-decoration: none;
-}
+
 .socialicon {
     width: 32px;
     height: auto;
-    margin: 0 8px;
 }
