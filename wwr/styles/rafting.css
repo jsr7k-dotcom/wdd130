@@ -8,7 +8,7 @@
     --clr-dark: #343A40; /* Dark Gray: Main text (paragraphs)*/
 
     /* Typography */
-    --font-primary: 'Montserrat', sans-serif; /* Titles and Headings */
+    --font-primary: 'Helvetica', sans-serif; /* Titles and Headings */
     --font-secondary: 'Lato', sans-serif; /* Paragraphs */
 }
 
