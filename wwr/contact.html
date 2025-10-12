@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="This is the contact us page for White Water Rafting, it contains contact information as the main address, phone number, contact form and the employees' profile.">
+    <meta name="author" content="José Roberto Hernández Peña">
+    <title>White Water Rafting Contact Us page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/rafting.css">
+
+</head>
+
+<body>
+    <header>
+        <img src="images/logo.png" alt="White Water Rafting logo" class="logo">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="trips.html">Trips</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="company-info">
+            <h1>White Water Rafting Co.</h1>
+            <p>900 E 11th St.
+                <br>Austin, TX 78702
+                <br>+1 512 653-0090
+                <br>info@wwrafting.com
+            </p>
+        </div>
+        <section class="contact">
+            <div class="map">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3445.839178401589!2d-97.7338486241553!3d30.27016310784058!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8644b5a4ae281265%3A0x2c788d6e10ac6031!2s900%20E%2011th%20St%2C%20Austin%2C%20TX%2078702%2C%20USA!5e0!3m2!1sen!2smx!4v1760147354583!5m2!1sen!2smx"
+                    allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="cont-form">
+                <form>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <fieldset>
+                        <legend>Message Purpose</legend>
+                        <input type="radio" id="question-general" name="purpose" value="question-general">
+                        <label for="question-general">General Inquiry</label><br>
+
+                        <input type="radio" id="question-reservation" name="purpose" value="question-reservation">
+                        <label for="question-reservation">Reservation Question</label><br>
+
+                        <input type="radio" id="website-suggestion" name="purpose" value="website-suggestion">
+                        <label for="website-suggestion">Website Suggestion</label><br>
+                    </fieldset>
+
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+
+                    <label for="subscribe">
+                        <input type="checkbox" id="subscribe" name="subscribe">
+                        Subscribe to our newsletter
+                    </label>
+                    <button type="submit">Get in Touch!</button>
+                </form>
+            </div>
+        </section>
+        <section class="crew">
+            <h2>Meet our Team</h2>
+            <div class="crew-row">
+                <figure>
+                    <img src="images/employee1.jpg" alt="Photo of Sarah, safety specialist">
+                    <figcaption>Sarah Connor - Safety Specialist</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/employee2.jpg" alt="Photo of Mike, the company guide">
+                    <figcaption>Mike Torres - Lead Guide</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/employee3.jpg" alt="Photo of Emily, the reservations manager">
+                    <figcaption>Emma Lora - Reservations Manager</figcaption>
+                </figure>
+        </section>
+    </main>
+    <footer>
+        <p>© 2025 White Water Rafting Co. | José Roberto Hernández Peña</p>
+        <nav class="socialmedia">
+            <a href="https://facebook.com"><img src="images/facebook.svg" alt="Facebook profile link"
+                    class="socialicon"></a>
+            <a href="https://instagram.com"><img src="images/instagram.svg" alt="Instagram profile link"
+                    class="socialicon"></a>
+            <a href="https://youtube.com"><img src="images/youtube.svg" alt="YouTube profile link"
+                    class="socialicon"></a>
+        </nav>
+    </footer>
+</body>
+
+</html>

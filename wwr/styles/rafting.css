@@ -84,15 +84,77 @@ nav a:hover {
 }
 
 /* MAIN STYLES */
+.company-info {
+    line-height: 1.6;
+    margin: 16px 0;
+    text-align: center;
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+
+.contact {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+    align-items: start;
+    margin: 16px 0;
+}
+
+.cont-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.cont-form label {
+    font-weight: 600;
+}
+
+.cont-form fieldset {
+    border: 1px solid var(--clr-dark);
+    padding: 16px;
+    border-radius: 8px;
+}
+
+.cont-form input, .cont-form textarea {
+    padding: 8px;
+    border: 1px solid var(--clr-dark);
+    border-radius: 4px;
+    font-family: var(--font-secondary);
+    font-size: 1rem;
+}
+.cont-form button {
+    background-color: var(--clr-accent);
+    color: var(--clr-primary);
+    border: none;
+    padding: 10px;
+    font-size: 1.1rem;
+    font-weight: 700;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
 .hero {
-    position: relative;
     margin-bottom: 16px;
+    position: relative;
+}
+
+.map {
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+.map iframe {
+    width: 100%;
+    height: 100%;
+    border: 0;
 }
 
 .hero img {
     display: block;
-    width: 100%;
     height: auto;
+    width: 100%;
 }
 
 .hero h1 {
@@ -138,18 +200,18 @@ nav a:hover {
     border-radius: 8px;
 }
 
-.adventure {
+.adventure, .crew {
     background-color: var(--clr-primary);
     color: var(--clr-light);
     padding: 32px;
     margin: 16px 0;
 }
 
-.adventure h2 {
+.adventure h2, .crew h2 {
     color: var(--clr-light);
 }
 
-.adventure-row {
+.adventure-row, .crew-row {
     display: flex;
     gap: 1rem;
     justify-content: center;
@@ -157,17 +219,17 @@ nav a:hover {
     margin-top: 16px;
 }
 
-.adventure-row figure {
+.adventure-row figure, .crew-row figure {
     text-align: center;
 }
 
-.adventure-row img {
+.adventure-row img, .crew-row img {
     width: 150px;
     height: auto;
     border-radius: 8px;
 }
 
-.adventure-row figcaption {
+.adventure-row figcaption, .crew-row figcaption {
     margin-top: 8px;
     font-size: 1rem;
     font-weight: 600;
