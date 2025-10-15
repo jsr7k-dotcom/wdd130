@@ -7,14 +7,8 @@
     <meta name="description"
         content="This is the about page of White Water Rafting, it contains information about the company and its history.">
     <meta name="author" content="José Roberto Hernández Peña">
-    <title>White Water Rafting</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
-        rel="stylesheet">
+    <title>White Water Rafting | Home</title>
     <link rel="stylesheet" href="styles/rafting.css">
-
 </head>
 
 <body>
@@ -29,9 +23,62 @@
             </ul>
         </nav>
     </header>
-    <main>
 
+    <main>
+        <div class="home-hero">
+            <img src="images/home_hero_image.jpg"
+                alt="A group of people in a blue raft navigating intense white water rapids.">
+            <div class="home-hero__headline">
+                <h1>Experience the Thrill of White Water Rafting!</h1>
+            </div>
+            <div class="cta">
+                <p>Join us for an unforgettable adventure on the river. Whether you're a beginner or an experienced
+                    rafter,
+                    we have the perfect trip for you.</p>
+                <a href="trips.html" class="cta__button">Explore Our Trips</a>
+            </div>
+        </div>
+        <section class="features-grid">
+            <div class="grid-item">
+                <img src="images/adventure4.jpg"
+                    alt="Rafting safety gear, including colorful helmets and orange life vests, laid out on an inflatable raft.">
+                <div class="grid-item__text">
+                    <h3>Safety First</h3>
+                    <p>
+                        Your safety is our top priority. Our experienced guides are trained in first aid and CPR, and
+                        we provide all necessary safety equipment, including helmets and life jackets.
+                    </p>
+                </div>
+            </div>
+            <div class="grid-item">
+                <img src="images/adventure2.jpg"
+                    alt="A blue raft floats on a calm, wide river surrounded by lush green mountains under a blue sky.">
+                <div class="grid-item__text">
+                    <h3>Scenic Locations</h3>
+                    <p>
+                        Our trips take you through some of the most beautiful and scenic locations. Enjoy breathtaking
+                        views of nature as you navigate the river.
+                    </p>
+                </div>
+        </section>
+
+        <section class="newsletter-section">
+            <h2>Join Our Adventure Newsletter!</h2>
+            <p>Get monthly updates, special offers, and thrilling stories delivered right to your inbox.</p>
+            <form class="newsletter-form">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="user_name" placeholder="Your Name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="user_email" placeholder="Your Email Address" required>
+                </div>
+                <button type="submit">Sign Up</button>
+            </form>
+        </section>
     </main>
+
     <footer>
         <p>© 2025 White Water Rafting Co. | José Roberto Hernández Peña</p>
         <nav class="socialmedia">
